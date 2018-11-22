@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="landing_2_files/82b1832bc6"></script><script type="text/javascript" async="" src="landing_2_files/watch.js"></script><script type="text/javascript" async="" src="landing_2_files/ga.js"></script><script src="landing_2_files/nr-1099.js"></script><script id="facebook-jssdk" src="landing_2_files/sdk.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"82b1832bc6","applicationID":"307731","transactionName":"c1kIEBBdXVtSERtdU15SDwoFQR5EXwxD","queueTime":1,"applicationTime":32,"agent":""}</script>
-<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgcGV1FACwMHU1JT"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
     <link rel="canonical" href="http://www.dk.ru/landing/globalnoe-obrazovanie">
     <link rel="stylesheet" href="landing_2_files/full_screen.css">
     <style>
@@ -15,55 +13,11 @@
     </style>
     <script type="text/javascript" src="landing_2_files/jquery_002.js"></script>
     <script type="text/javascript" src="landing_2_files/jquery.js"></script>
-    <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId: '1443793562419724',
-      autoLogAppEvents: true,
-      xfbml: true,
-      version: 'v3.2'
-    });
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/ru_RU/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
-    <script>
-  var _gaq = _gaq || [];
-   _gaq.push(
-     ['_setAccount', 'UA-18030205-1'],
-     ['_setDomainName', '.dk.ru'],
-     ['_setAllowHash', false],
-     ['_trackPageview', location.protocol + '//' + location.host + location.pathname + location.search + location.hash],
-     ['_trackPageLoadTime']
-   );
-
-   window.addEventListener('load', function() {
-     (function() {
-       var
-         ga = document.createElement('script'),
-         s = document.getElementsByTagName('script')[0];
-       ga.type = 'text/javascript';
-       ga.async = true;
-       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-       s.parentNode.insertBefore(ga, s);
-     })();
-    });
-</script>
-
     <script type="text/javascript" src="landing_2_files/ga_events.js"></script>
     <script type="text/javascript" src="landing_2_files/social-share.js"></script>
     <script type="text/javascript" src="landing_2_files/social.js"></script>
     <script type="text/javascript" src="landing_2_files/archived_blocks.js"></script>
-  <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
-.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
-.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head>
+  </head>
   <body>
     <header class="header" data-backcolor="#000000" data-opacity="1">
   <div class="main">
@@ -92,8 +46,8 @@
           <div id="block_246" class="text-zone-container" data-hide="false" data-img="" data-backcolor="#FFFFFF" data-opacity="1" data-landing-client-anchor-name="" data-landing-client-archived="false" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
   <div class="text-zone text-zone-full">
     <p style="text-align: center;">
-	<span style="font-size:16px;">Как обучение помогло построить карьеру, 
-запустить собственный бизнес и вывести компанию на зарубежный рынок – 
+	<span style="font-size:16px;">Как обучение помогло построить карьеру,
+запустить собственный бизнес и вывести компанию на зарубежный рынок –
 выпускники российских бизнес-школ поделились опытом.</span></p>
 
   </div>
@@ -111,8 +65,8 @@
               <div class="article-content-box">
                 <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#skolkovo" class="article-title" style="font-size: 15px;font-family: Arial;color: #000000;text-align: left;font-weight: bold;text-decoration: none;">Зачем российскому малому бизнесу выходить на международный рынок</a>
                 <div class="article-description" style="font-size: 13px;font-family: Arial;color: #000000;text-align: left;font-weight: normal;text-decoration: none;">
-                  Для предпринимателей, которые хотят выйти на 
-международный рынок, в бизнес-школе СКОЛКОВО разработали программу 
+                  Для предпринимателей, которые хотят выйти на
+международный рынок, в бизнес-школе СКОЛКОВО разработали программу
 Practicum Global Shift. Она помогает понять, как сделать бизнес успешным
  за рубежом.
                     <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#skolkovo" class="article-link"></a>
@@ -129,8 +83,8 @@ Practicum Global Shift. Она помогает понять, как сдела�
                 <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#skolkovo2" class="article-title" style="font-size: 15px;font-family: Arial;color: #000000;text-align: left;font-weight: bold;text-decoration: none;">Как СКОЛКОВО MBA меняет жизнь</a>
                 <div class="article-description" style="font-size: 13px;font-family: Arial;color: #000000;text-align: left;font-weight: normal;text-decoration: none;">
                   СКОЛКОВО MBA — международная образовательная программа
- с фокусом на управленческих знаниях. Студенты — предприниматели и 
-корпоративные менеджеры, желающие развивать бизнес и сделать карьерный 
+ с фокусом на управленческих знаниях. Студенты — предприниматели и
+корпоративные менеджеры, желающие развивать бизнес и сделать карьерный
 рывок.
                     <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#skolkovo2" class="article-link"></a>
                 </div>
@@ -150,9 +104,9 @@ Practicum Global Shift. Она помогает понять, как сдела�
               <div class="article-content-box">
                 <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#synergy" class="article-title" style="font-size: 15px;font-family: Arial;color: #000000;text-align: left;font-weight: bold;text-decoration: none;">Будущее – за дистанционным обучением?</a>
                 <div class="article-description" style="font-size: 13px;font-family: Arial;color: #000000;text-align: left;font-weight: normal;text-decoration: none;">
-                  Сфера образования – одна из первых, куда пришли 
-дистанционные технологии. Зачем ехать за тридевять земель, тратить 
-деньги на дорогу и жилье, если знания и диплом столичного вуза можно 
+                  Сфера образования – одна из первых, куда пришли
+дистанционные технологии. Зачем ехать за тридевять земель, тратить
+деньги на дорогу и жилье, если знания и диплом столичного вуза можно
 получить дома?
                     <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#synergy" class="article-link"></a>
                 </div>
@@ -167,9 +121,9 @@ Practicum Global Shift. Она помогает понять, как сдела�
               <div class="article-content-box">
                 <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#mirbis2" class="article-title" style="font-size: 15px;font-family: Arial;color: #000000;text-align: left;font-weight: bold;text-decoration: none;">Как и почему меняется МВА</a>
                 <div class="article-description" style="font-size: 13px;font-family: Arial;color: #000000;text-align: left;font-weight: normal;text-decoration: none;">
-                  В этом году школе бизнеса МИРБИС, одному из ведущих 
-провайдеров МВА в стране, исполняется 30 лет. «Сегодня МВА стремительно 
-меняется», – констатирует Елена Переверзева, исполнительный директор 
+                  В этом году школе бизнеса МИРБИС, одному из ведущих
+провайдеров МВА в стране, исполняется 30 лет. «Сегодня МВА стремительно
+меняется», – констатирует Елена Переверзева, исполнительный директор
 МИРБИС.
                     <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#mirbis2" class="article-link"></a>
                 </div>
@@ -184,9 +138,9 @@ Practicum Global Shift. Она помогает понять, как сдела�
               <div class="article-content-box">
                 <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#mirbis1" class="article-title" style="font-size: 15px;font-family: Arial;color: #000000;text-align: left;font-weight: bold;text-decoration: none;">MBA: диплом за миллион на стену, или окно в светлое будущее? Опыт выпускников</a>
                 <div class="article-description" style="font-size: 13px;font-family: Arial;color: #000000;text-align: left;font-weight: normal;text-decoration: none;">
-                  10 лет назад об MBA мечтало большинство собственников 
-бизнеса и топ-менеджеров. Могут ли сегодня программы MBA помочь в 
-карьере, построении бизнеса, остается ли диплом гарантией успешного 
+                  10 лет назад об MBA мечтало большинство собственников
+бизнеса и топ-менеджеров. Могут ли сегодня программы MBA помочь в
+карьере, построении бизнеса, остается ли диплом гарантией успешного
 будущего?
                     <a href="http://www.dk.ru/landing/globalnoe-obrazovanie?utm_campaign=globalnoe-obrazovanie&amp;utm_medium=specproject&amp;utm_source=landing_inside#mirbis1" class="article-link"></a>
                 </div>
@@ -201,19 +155,19 @@ Practicum Global Shift. Она помогает понять, как сдела�
     <h2>
 	<strong>Зачем российскому малому бизнесу выходить на международный рынок</strong></h2>
 <p>
-	<span style="color:#696969;"><span style="font-size:18px;">Для 
-предпринимателей, которые хотят выйти на международный рынок, в 
-бизнес-школе СКОЛКОВО разработали программу Practicum Global Shift. Она 
+	<span style="color:#696969;"><span style="font-size:18px;">Для
+предпринимателей, которые хотят выйти на международный рынок, в
+бизнес-школе СКОЛКОВО разработали программу Practicum Global Shift. Она
 помогает понять, как сделать бизнес успешным за рубежом.</span></span></p>
 <p>
-	В России доля малого и среднего бизнеса в общем объеме экспорта 
-составляет менее 1%.В Китае она равна 68%, в Израиле — 50%. Российским 
-компаниям необходимо срочно осваивать работу на международных рынках. 
-Если есть отличный продукт, не нужно зацикливаться на России. Объем 
-платежеспособного спроса за пределами страны почти в 50 раз выше. 
-Сегодня глобальность –удел не только корпораций, но и стратегия для 
-небольших компаний, помогающая стать устойчивее. Конкурируя на внешних 
-рынках, бизнес укрепляется. Благодаря развитию технологий построить 
+	В России доля малого и среднего бизнеса в общем объеме экспорта
+составляет менее 1%.В Китае она равна 68%, в Израиле — 50%. Российским
+компаниям необходимо срочно осваивать работу на международных рынках.
+Если есть отличный продукт, не нужно зацикливаться на России. Объем
+платежеспособного спроса за пределами страны почти в 50 раз выше.
+Сегодня глобальность –удел не только корпораций, но и стратегия для
+небольших компаний, помогающая стать устойчивее. Конкурируя на внешних
+рынках, бизнес укрепляется. Благодаря развитию технологий построить
 международную компанию становится проще.</p>
 <p>
 	<strong>Директор программы Practicum Global Shift бизнес-школы <a href="http://www.dk.ru/wiki/skolkovo" target="_blank">СКОЛКОВО</a>&nbsp;<a href="http://www.dk.ru/wiki/bondarenko-elena-skolkovo" target="_blank">Елена Бондаренко</a></strong> подняла эту тему &nbsp;в своем выступлении на TEDxNovosibirsk.</p>
@@ -224,126 +178,126 @@ Practicum Global Shift. Она помогает понять, как сдела�
 <p>
 	<u><span style="font-size:18px;"><strong>Андрей Железнов, операционный директор SPLAT&nbsp;</strong></span></u>(пару лет назад компания взяла курс на покорение международного рынка):</p>
 <p>
-	— Понятие «ниша» можно рассмотреть через опыт спортсменов. Кто такой 
-профессиональный спортсмен? Человек, выступающий на соревнованиях в 
-определённом виде спорта вместе с участниками со всего мира. И в этом 
+	— Понятие «ниша» можно рассмотреть через опыт спортсменов. Кто такой
+профессиональный спортсмен? Человек, выступающий на соревнованиях в
+определённом виде спорта вместе с участниками со всего мира. И в этом
 виде спорта действуют одни правила независимо от того, в какой стране ты
- им занимаешься. Сфера бизнеса в одной нише устроена похожим образом. 
-Осваивая любой новый локальный рынок, вы так же конкурируете со всеми 
-мировыми компаниями, работающими в данном сегменте. Начав свою 
-деятельность в России, мы встретили Colgate, Lacalut и многие другие 
-международные марки. И в обоих случаях к успеху приводит&nbsp;&nbsp; 
+ им занимаешься. Сфера бизнеса в одной нише устроена похожим образом.
+Осваивая любой новый локальный рынок, вы так же конкурируете со всеми
+мировыми компаниями, работающими в данном сегменте. Начав свою
+деятельность в России, мы встретили Colgate, Lacalut и многие другие
+международные марки. И в обоих случаях к успеху приводит&nbsp;&nbsp;
 &nbsp;только высокая концентрация на конкретном деле или продукте.</p>
 <p>
 	<span style="font-size:16px;"><strong>Выбор ниши</strong></span></p>
 <p>
-	Одна и та же ниша в разных странах может отличаться по размеру. 
-Например, ниша экологичных и безопасных продуктов в Скандинавии гораздо 
+	Одна и та же ниша в разных странах может отличаться по размеру.
+Например, ниша экологичных и безопасных продуктов в Скандинавии гораздо
 больше, чем в странах, которые не заботятся о качестве питания. Чем шире
  ниша — тем больше ваша потенциальная доля, но тем труднее работать, так
- как в ней уже находится больше компаний, и не все рады вашему 
+ как в ней уже находится больше компаний, и не все рады вашему
 появлению.</p>
 <p>
-	Предпочтительной для работы является ниша с существенным потенциалом 
-роста. Для успешного развития компании важно выйти не в ту страну, где 
-уже большая сформировавшаяся ниша, а в ту, где она будет интенсивнее 
+	Предпочтительной для работы является ниша с существенным потенциалом
+роста. Для успешного развития компании важно выйти не в ту страну, где
+уже большая сформировавшаяся ниша, а в ту, где она будет интенсивнее
 расти. Самый лучший вариант — создать инновационный продукт, который сам
- потом поспособствует развитию новой ниши. Самый понятный пример 
+ потом поспособствует развитию новой ниши. Самый понятный пример
 компании, которая так поступила, —&nbsp;&nbsp;Apple и ее iPhone.</p>
 <p>
 	<span style="font-size:16px;"><strong>Быть первыми </strong></span></p>
 <p>
-	Как стать лидером и новатором в производстве инновационных продуктов? 
-Точно так же, как и великим спортсменом: изначально поставить себе цель 
+	Как стать лидером и новатором в производстве инновационных продуктов?
+Точно так же, как и великим спортсменом: изначально поставить себе цель
 &nbsp;создавать лучшие продукты, в которых ценность для покупателя будет
- существенно выше, чем цена. Вы не найдёте ни одного атлета, который 
-хотел бы стать десятым на чемпионате. Все великие чемпионы мечтали быть 
+ существенно выше, чем цена. Вы не найдёте ни одного атлета, который
+хотел бы стать десятым на чемпионате. Все великие чемпионы мечтали быть
 лучшими в своем виде спорта.</p>
 <p>
-	Еще один совет: старайтесь постоянно удерживать фокус на потребителе. 
-Слушайте его и говорите с ним. Снова пример из сферы спорта. На одном 
-турнире два атлета могут показывать одинаковый уровень мастерства, но 
-один умело коммуницирует с публикой, дает интервью, а у другого эти 
-навыки отсутствуют. У какого спортсмена больше болельщиков и выше 
-рекламные гонорары? Очевидно, что у того, который более открыт. 
-Потребителям важен не только сам продукт, но и понимание, кто его 
-производит. Вместе эти вещи создают большую ценность для покупателя, 
+	Еще один совет: старайтесь постоянно удерживать фокус на потребителе.
+Слушайте его и говорите с ним. Снова пример из сферы спорта. На одном
+турнире два атлета могут показывать одинаковый уровень мастерства, но
+один умело коммуницирует с публикой, дает интервью, а у другого эти
+навыки отсутствуют. У какого спортсмена больше болельщиков и выше
+рекламные гонорары? Очевидно, что у того, который более открыт.
+Потребителям важен не только сам продукт, но и понимание, кто его
+производит. Вместе эти вещи создают большую ценность для покупателя,
 &nbsp;ведь он знает производителя и получает для себя лучший выбор.</p>
 <p>
 	<span style="font-size:16px;"><strong>Перспективы работы в России&nbsp;</strong></span></p>
 <p>
-	Мы поставили для себя конкретные цели. Одна из них, чтобы в 2021 году 
-на мировой рынок приходилось более 50% наших продаж. Я уверен, что на 
-каком-то этапе у нас будет не один центральный завод в России, но и в 
-других странах. Однако сейчас в России существуют определённые 
-преимущества в сфере производства. Благоприятные условия в фонде оплаты 
-труда, доступные энергоресурсы и поддержка государством российских 
-производителей открывают окно возможностей нашим производителям. Мы 
+	Мы поставили для себя конкретные цели. Одна из них, чтобы в 2021 году
+на мировой рынок приходилось более 50% наших продаж. Я уверен, что на
+каком-то этапе у нас будет не один центральный завод в России, но и в
+других странах. Однако сейчас в России существуют определённые
+преимущества в сфере производства. Благоприятные условия в фонде оплаты
+труда, доступные энергоресурсы и поддержка государством российских
+производителей открывают окно возможностей нашим производителям. Мы
 можем сыграть на том, что европейские компании становятся менее гибкими и
- более дорогими в производстве, а азиатские дальше по логистике и в 
-основном ориентированы на лоу-кост товары с низким качеством. Делая 
-продукт высочайшего качества в России и стремясь стать лучшими в мире, 
+ более дорогими в производстве, а азиатские дальше по логистике и в
+основном ориентированы на лоу-кост товары с низким качеством. Делая
+продукт высочайшего качества в России и стремясь стать лучшими в мире,
 можно достигать очень хороших результатов.</p>
 <p>
 	<u><span style="font-size:18px;"><strong>Михаил Левчук, исполнительный директор «Аргус-Спектр </strong></span></u>-&nbsp;«Аргус-Спектр»
- — семейная компания, сконцентрированная на одной конкретной нише — 
+ — семейная компания, сконцентрированная на одной конкретной нише —
 электронных противопожарных системах. Когда мы поняли, что беспроводные и
- мобильные технологии можно применять в такой критической отрасли, как 
-пожарная безопасность, то сразу выиграли у множества мировых лидеров и 
+ мобильные технологии можно применять в такой критической отрасли, как
+пожарная безопасность, то сразу выиграли у множества мировых лидеров и
 смогли предложить им свое готовое решение.</p>
 <p>
 	<span style="font-size:16px;"><strong>О стратегии </strong></span></p>
 <p>
-	В России и за рубежом у нас очень разная политика. Если в нашей стране 
-мы поставляем системы под ключ, то за рубеж — свои кубики для больших 
-систем. Довольно часто брендируемся не собственной маркой, а маркой 
-нашего партнера. Несмотря на то, что мы сильно сконцентрированы на 
-беспроводной пожарной сигнализации, у нас довольно много сопутствующих 
+	В России и за рубежом у нас очень разная политика. Если в нашей стране
+мы поставляем системы под ключ, то за рубеж — свои кубики для больших
+систем. Довольно часто брендируемся не собственной маркой, а маркой
+нашего партнера. Несмотря на то, что мы сильно сконцентрированы на
+беспроводной пожарной сигнализации, у нас довольно много сопутствующих
 бизнесов.</p>
 <p>
-	Мы начали выходить на европейский рынок примерно 10 лет назад и делали 
-это не ради прибыли. Во-первых, нам хотелось оценить своих будущих 
-конкурентов заранее, понять, как они ведут себя на своих домашних 
-рынках. Было интересно выявить их сильные и слабые стороны до их 
-появления в России. Во-вторых, мы интересовались передовыми 
-технологиями. Очень многие технологии в России пока не известны, не 
+	Мы начали выходить на европейский рынок примерно 10 лет назад и делали
+это не ради прибыли. Во-первых, нам хотелось оценить своих будущих
+конкурентов заранее, понять, как они ведут себя на своих домашних
+рынках. Было интересно выявить их сильные и слабые стороны до их
+появления в России. Во-вторых, мы интересовались передовыми
+технологиями. Очень многие технологии в России пока не известны, не
 дошли до промышленной реализации, и выход за рубеж &nbsp;это возможность
  посмотреть, какие методы сейчас доступны и реально применимы.</p>
 <p>
 	<span style="font-size:16px;"><strong>Об ошибках </strong></span></p>
 <p>
-	Успех уникален, а ошибки у всех практически одинаковы. Я могу назвать 
+	Успех уникален, а ошибки у всех практически одинаковы. Я могу назвать
 наши две главные ошибки. Первая — мы начали с продаж. Невозможно понять,
- что нужно поставить на рынок, находясь за его пределами. Изначально мы 
+ что нужно поставить на рынок, находясь за его пределами. Изначально мы
 вложились в строительство торгового дома. Развивая его, мы потеряли свой
- темп и фактически провалили первые 3-4 года работы. После этого мы 
+ темп и фактически провалили первые 3-4 года работы. После этого мы
 поняли, в каком направлении двигаться дальше.Был создан центр разработки
- на том рынке, на который мы собирались выходить. Звучит громко, но на 
-практике в первое время у нас в штате было всего три инженера. Это были 
-люди, хорошо понимающие рынок, которые могли перевести технические 
-задания с одного языка на другой и в целом лучше нас понимали 
+ на том рынке, на который мы собирались выходить. Звучит громко, но на
+практике в первое время у нас в штате было всего три инженера. Это были
+люди, хорошо понимающие рынок, которые могли перевести технические
+задания с одного языка на другой и в целом лучше нас понимали
 потребности своего домашнего рынка.</p>
 <p>
-	Вторая наша ошибка — мы долгое время решали производственные задачи из 
-России. Тогда мы не понимали, насколько нашим клиентам важно время. 
-Почти всегда для высокотехнологичных товаров время поставки критично. 
-Если бы мы сейчас находились в Англии и заказали товар из luxury- 
-сегмента, курьер привез бы его до вечера. Также мы не особо понимали 
-важность размещения производства рядом с клиентом — то, что иногда 
-называется реиндустриализацией. Только с появлением завода в Италии 
+	Вторая наша ошибка — мы долгое время решали производственные задачи из
+России. Тогда мы не понимали, насколько нашим клиентам важно время.
+Почти всегда для высокотехнологичных товаров время поставки критично.
+Если бы мы сейчас находились в Англии и заказали товар из luxury-
+сегмента, курьер привез бы его до вечера. Также мы не особо понимали
+важность размещения производства рядом с клиентом — то, что иногда
+называется реиндустриализацией. Только с появлением завода в Италии
 смогли начать более эффективно взаимодействовать с потребителями.</p>
 <p>
 	<strong style="font-size: 16px;"><span style="color:#696969;"><a href="https://practicum.skolkovo.ru/ru/gs/" target="_blank"><img alt="" src="landing_2_files/944_content.png" style="width: 465px; height: 47px;"></a></span></strong></p>
 <p>
 	<span style="font-size:16px;"><strong>В <a href="http://practicum.skolkovo.ru/ru/gs/?utm_source=DK_region_specialpro&amp;utm_medium=special_dk_oct2018&amp;utm_campaign=region_DK_oct2018" target="_blank">Practicum Global Shift</a>
- не учат по учебникам, а создают рабочую среду, в которой 
+ не учат по учебникам, а создают рабочую среду, в которой
 предприниматели вместе проектируют стратегии, а также тестируют их друг с
- другом и экспертами. Программа подходит людям, которые собираются 
-развивать международное направление, и тем, у кого уже есть собственные 
-наработки. Первым помогут докрутить идею, построить стратегию 
-международного развития, протестировать ее с международными экспертами, 
-привлечь ресурсы и создать сеть партнеров. А вторым — улучшить уже 
-существующую стратегию, которая не работает или работает недостаточно 
+ другом и экспертами. Программа подходит людям, которые собираются
+развивать международное направление, и тем, у кого уже есть собственные
+наработки. Первым помогут докрутить идею, построить стратегию
+международного развития, протестировать ее с международными экспертами,
+привлечь ресурсы и создать сеть партнеров. А вторым — улучшить уже
+существующую стратегию, которая не работает или работает недостаточно
 эффективно.</strong></span></p>
 <p>
 	<img alt="" src="landing_2_files/945_content.png" style="width: 463px; height: 20px;"></p>
@@ -374,81 +328,81 @@ Practicum Global Shift. Она помогает понять, как сдела�
 <p>
 	– Моя история в бизнесе началась благодаря школе <a href="http://www.dk.ru/wiki/moskovskaya-mezhdunarodnaya-vysshaya-shkola-biznesa-mirbis" target="_blank">МИРБИС</a>: через месяц после защиты диплома я открыл собственную компанию.</p>
 <p>
-	По жизни всего добиваюсь сам. Начинал работать в телекоме монтажником. 
-Спустя годы стал руководителем отдела развития сетей, затем начальником 
-управления эксплуатации сетей ШПД, потом директором департамента сети, 
+	По жизни всего добиваюсь сам. Начинал работать в телекоме монтажником.
+Спустя годы стал руководителем отдела развития сетей, затем начальником
+управления эксплуатации сетей ШПД, потом директором департамента сети,
 директором по развитию. Работал в крупных телеком-компаниях. У меня были
- карьерный рост, стабильный доход и спокойный сон. После МИРБИС 
+ карьерный рост, стабильный доход и спокойный сон. После МИРБИС
 отказался от всего этого в пользу своего дела, о чем ни разу не пожалел.</p>
 <p>
 	В 2016 г. партнеры и инвесторы крутили у виска пальцем и говорили, что я
- мечтатель, мои идеи по уберизации телекома никому не нужны, а 
-предложенная мною модель полная чушь. Начался конфликт между 
-акционерами, который привел к моей отставке с поста генерального 
+ мечтатель, мои идеи по уберизации телекома никому не нужны, а
+предложенная мною модель полная чушь. Начался конфликт между
+акционерами, который привел к моей отставке с поста генерального
 директора. Я остался без компании с ежегодным оборотом в 160 млн. руб. и
- активами более 40 млн. руб., которую основал и развивал в течение пяти 
+ активами более 40 млн. руб., которую основал и развивал в течение пяти
 лет.</p>
 <p>
-	Моя доля в компании составляла 35%, большая часть принадлежала 
-инвестору. Мы двигались вперед, но не так быстро, как планировали. Я 
-получил хороший урок: надо развивать компанию самостоятельно, пока не 
-поймешь, что работающий прототип востребован, настало время для 
+	Моя доля в компании составляла 35%, большая часть принадлежала
+инвестору. Мы двигались вперед, но не так быстро, как планировали. Я
+получил хороший урок: надо развивать компанию самостоятельно, пока не
+поймешь, что работающий прототип востребован, настало время для
 масштабирования и рывка вперед.</p>
 <p>
-	Я собрал волю в кулак и начал все сначала. В 2017 г. стартап получил 
-название – Gorserv, городская служба сервиса. Сегодня Gorserv-Digital – 
-компания с двукратным годовым ростом выручки, быстро масштабируемая в 
-любом городе. Все идеи по автоматизации сервисных работ я смог 
-реализовать со своей командой за короткий срок. Сервис работает в 13 
+	Я собрал волю в кулак и начал все сначала. В 2017 г. стартап получил
+название – Gorserv, городская служба сервиса. Сегодня Gorserv-Digital –
+компания с двукратным годовым ростом выручки, быстро масштабируемая в
+любом городе. Все идеи по автоматизации сервисных работ я смог
+реализовать со своей командой за короткий срок. Сервис работает в 13
 городах России.</p>
 <p>
-	Убежден, что опыт и бизнес-образование помогают мне находить 
-нестандартные решения, не наступая на старые грабли. Сейчас мы с 
-командой создаем новый рынок мастеров. Оказалось, хорошего сервиса для 
+	Убежден, что опыт и бизнес-образование помогают мне находить
+нестандартные решения, не наступая на старые грабли. Сейчас мы с
+командой создаем новый рынок мастеров. Оказалось, хорошего сервиса для
 заказчиков не достаточно. Необходимо создать такие условия для мастеров,
- чтобы они работали «вбелую» и были готовы к контролю со стороны 
+ чтобы они работали «вбелую» и были готовы к контролю со стороны
 платформы.</p>
 <p>
 	<strong>Карина Левина, финансовый директор ООО «Орак»:</strong></p>
 <p>
 	<img alt="" src="landing_2_files/975_content.jpeg" style="width: 270px; height: 280px; margin: 5px; float: left;">–
- Три года назад я стала заместителем финансового директора в турецком 
+ Три года назад я стала заместителем финансового директора в турецком
 холдинге, представленном в России группой компаний. Требовались глубокие
- знания в области финансов для разработки финансовой стратегии. Кроме 
+ знания в области финансов для разработки финансовой стратегии. Кроме
 того, наличие диплома <a href="http://mirbis.ru/courses/business-education/mba-for-regions/?utm_source=dkru&amp;utm_medium=project&amp;utm_campaign=dkru-project-0310">MBA</a> престижного учебного заведения в деловых кругах считается хорошим тоном. МИРБИС – одно из таких, поэтому долго я не выбирала.</p>
 <p>
-	За год обучения я выстроила стратегию развития своей карьеры. Когда 
-наступил момент выбора специализации, я поняла, что хочу больше знать о 
-продажах, маркетинге, стратегии развития бизнеса. Я отдала предпочтение 
+	За год обучения я выстроила стратегию развития своей карьеры. Когда
+наступил момент выбора специализации, я поняла, что хочу больше знать о
+продажах, маркетинге, стратегии развития бизнеса. Я отдала предпочтение
 стратегическому менеджменту. И не ошиблась.</p>
 <p>
-	В течение второго года обучения стала разговаривать на одном языке с 
-сотрудниками коммерческого отдела. Сегодня я финансовый директор 
+	В течение второго года обучения стала разговаривать на одном языке с
+сотрудниками коммерческого отдела. Сегодня я финансовый директор
 бельгийской компании «Орак». Убеждена, если бы не МИРБИС, преподаватели,
  совместная работа с однокурсниками, этого бы не произошло.</p>
 <p>
 	<strong>Андрей Лессовой, генеральный директор ООО «АСБЕРГ АС»:</strong></p>
 <p>
 	<img alt="" src="landing_2_files/962_content.jpg" style="width: 270px; height: 247px; margin: 5px; float: left;">–
- Я поступил в МИРБИС в начале 2015 г. В это время экономика страны 
-плавно, но уверено входила в рецессию и стагнацию. Объем 
-электротехнической отрасли, в которой работает наша компания, начал 
+ Я поступил в МИРБИС в начале 2015 г. В это время экономика страны
+плавно, но уверено входила в рецессию и стагнацию. Объем
+электротехнической отрасли, в которой работает наша компания, начал
 сокращаться.</p>
 <p>
-	Со временем стало понятно: я выбрал удачный момент для 
-бизнес-образования. Я начал разрабатывать бизнес-стратегии, приступил к 
-формализации рабочих процессов, созданию корпоративной «Книги продаж», 
-внедрению бюджетирования. Я отправил на обучение в МИРБИС всех 
+	Со временем стало понятно: я выбрал удачный момент для
+бизнес-образования. Я начал разрабатывать бизнес-стратегии, приступил к
+формализации рабочих процессов, созданию корпоративной «Книги продаж»,
+внедрению бюджетирования. Я отправил на обучение в МИРБИС всех
 заместителей, чтобы разговаривать «на одном языке».</p>
 <p>
 	После внедрения бюджетирования и выделения центров прибыли руководители
- начали предоставлять оцифрованные показатели работы подразделений. Это 
-позволило оценить эффективность команд и управленцев. Появление 
-стратегического подхода к развитию бизнеса помогло всем подразделениям 
+ начали предоставлять оцифрованные показатели работы подразделений. Это
+позволило оценить эффективность команд и управленцев. Появление
+стратегического подхода к развитию бизнеса помогло всем подразделениям
 двигаться в одном направлении и оперативно корректировать планы компании
  и задачи каждого отдела.</p>
 <p>
-	Мы увеличили эффективность бизнеса, сократили издержки и пережили пик 
+	Мы увеличили эффективность бизнеса, сократили издержки и пережили пик
 кризиса без потерь. Несмотря на отсутствие роста в отрасли, наша выручка
  стабильно увеличивается на 15-20% в год. Благодаря полученным знаниям у
  нас появились преимущества перед конкурентами, работающими по старинке.</p>
@@ -472,42 +426,42 @@ Practicum Global Shift. Она помогает понять, как сдела�
 	<strong><span style="font-size:16px;"><span style="color:#696969;">В этом году школе бизнеса МИРБИС, одному из ведущих провайдеров </span><a href="http://mirbis.ru/mba/strategic-management/?utm_source=dkru&amp;utm_medium=project&amp;utm_campaign=dkru-project-0310" target="_blank"><span style="color:#696969;">МВА</span></a><span style="color:#696969;"> в стране, исполняется 30 лет. «Сегодня МВА стремительно меняется», – констатирует <a href="http://www.dk.ru/wiki/pereverzeva-elena" target="_blank">Елена Переверзева</a>, исполнительный директор МИРБИС.</span></span></strong></p>
 <p>
 	<img alt="" src="landing_2_files/007_content.jpg" style="width: 270px; height: 203px; margin: 5px; float: left;">–
- МИРБИС развивает образовательные программы в тесном контакте с 
-корпоративными партнерами и выпускниками. На программах 
-бизнес-образования мы учим слушателей мыслить шире, осваивать новые 
-лидерские роли через проектную деятельность. Мы помогаем им стать 
+ МИРБИС развивает образовательные программы в тесном контакте с
+корпоративными партнерами и выпускниками. На программах
+бизнес-образования мы учим слушателей мыслить шире, осваивать новые
+лидерские роли через проектную деятельность. Мы помогаем им стать
 устойчивее к вызовам внешней среды.</p>
 <p>
-	Создание предпринимательского проекта проходит через все основные 
-управленческие дисциплины и завершается защитой. В активе бизнес-школы 
-более 160 разработанных проектов, около 30% превращаются в реальный 
+	Создание предпринимательского проекта проходит через все основные
+управленческие дисциплины и завершается защитой. В активе бизнес-школы
+более 160 разработанных проектов, около 30% превращаются в реальный
 бизнес.</p>
 <p>
-	МИРБИС – школа для бизнеса. В наших аудиториях обучаются 
-предприниматели, менеджеры среднего и высшего звена, чьи компании 
+	МИРБИС – школа для бизнеса. В наших аудиториях обучаются
+предприниматели, менеджеры среднего и высшего звена, чьи компании
 работают в условиях конкуренции.</p>
 <p>
 	Эксперты британской Ассоциации МВА (АМВА), аккредитующие программы МВА и <a href="http://mirbis.ru/emba/?utm_source=dkru&amp;utm_medium=project&amp;utm_campaign=dkru-project-0310" target="_blank">ЕМВА</a>
- по всему миру, отметили МИРБИС как «школу бизнеса с человеческим 
+ по всему миру, отметили МИРБИС как «школу бизнеса с человеческим
 лицом». Для слушателей, выпускников, преподавателей и сотрудников МИРБИС
- – не просто альма-матер, это дом, где можно встречаться с коллегами, 
+ – не просто альма-матер, это дом, где можно встречаться с коллегами,
 партнерами, друзьями.</p>
 <p>
-	Традиционный подход к обучению в бизнес-школах предполагает 
-использование кейс-метода. Гарвардская школа бизнеса, где он зародился, 
-сделала его одним из основных инструментов практической 
-ориентированности на МВА. Он был довольно хорош и результативен долгое 
-время. Но сейчас все стремительно меняется, зачастую кейс не отражает 
-реальной картины и ситуации в бизнесе. Поэтому ведущие школы бизнеса 
-начали внедрять проектное обучение, бизнес-проектирование новых 
-направлений деятельности компаний, новых концептуальных и финансовых 
-моделей, дизайн мышления. Мы переходим от трансляции знаний к созданию 
+	Традиционный подход к обучению в бизнес-школах предполагает
+использование кейс-метода. Гарвардская школа бизнеса, где он зародился,
+сделала его одним из основных инструментов практической
+ориентированности на МВА. Он был довольно хорош и результативен долгое
+время. Но сейчас все стремительно меняется, зачастую кейс не отражает
+реальной картины и ситуации в бизнесе. Поэтому ведущие школы бизнеса
+начали внедрять проектное обучение, бизнес-проектирование новых
+направлений деятельности компаний, новых концептуальных и финансовых
+моделей, дизайн мышления. Мы переходим от трансляции знаний к созданию
 новых знаний и бизнес-инструментов во время обучения.</p>
 <p>
-	На протяжении последних десяти лет мы работаем в виртуальной среде. 
+	На протяжении последних десяти лет мы работаем в виртуальной среде.
 Часть дисциплин преподаем очно, например, по выходным. В будни работаем в
  виртуальных классах. Этот формат предполагает индивидуальное выполнение
- заданий и совместные исследования, которые затем оценивает 
+ заданий и совместные исследования, которые затем оценивает
 преподаватель.</p>
 <p style="text-align: center;">
 	<iframe allow="autoplay; encrypted-media" allowfullscreen="" scrolling="no" src="landing_2_files/rqbhAflxx2E.html" style="max-width: 100%;" width="850" height="450" frameborder="0"></iframe></p>
@@ -529,12 +483,12 @@ Practicum Global Shift. Она помогает понять, как сдела�
 	Как СКОЛКОВО MBA меняет жизнь</h2>
 <p>
 	<strong><span style="font-size:18px;"><span style="color:#696969;">СКОЛКОВО
- MBA — международная образовательная программа с фокусом на 
-управленческих знаниях. Студенты — предприниматели и корпоративные 
+ MBA — международная образовательная программа с фокусом на
+управленческих знаниях. Студенты — предприниматели и корпоративные
 менеджеры, желающие развивать бизнес и сделать карьерный рывок.</span></span></strong></p>
 <p>
 	Выпускники <strong><a href="http://www.dk.ru/wiki/skolkovo-mba" target="_blank">СКОЛКОВО MBA</a></strong> говорят о том, что программа изменила их жизнь. Не стала исключением <strong><a href="http://www.dk.ru/wiki/danekina-ekaterina" target="_blank">Екатерина Данекина</a>, директор по развитию Go2Armenia</strong>.
- В интервью Наталье Синдеевой на телеканале «Дождь» она рассказала о 
+ В интервью Наталье Синдеевой на телеканале «Дождь» она рассказала о
 переезде в Армению и бизнесе, который меняет страну к лучшему.</p>
 <p style="text-align: center;">
 	<iframe allow="autoplay; encrypted-media" allowfullscreen="" scrolling="no" src="landing_2_files/QSFjTMlxALY.html" style="max-width: 100%;" width="850" height="450" frameborder="0"></iframe></p>
@@ -545,44 +499,44 @@ Practicum Global Shift. Она помогает понять, как сдела�
 <p>
 	<strong>Программа СКОЛКОВО </strong><strong>MBA</strong></p>
 <p>
-	На программе изучают 14 бизнес-дисциплин, выполняют проектную работу, 
-посещают офисы компаний в Кремниевой долине и в Китае, а также работают 
+	На программе изучают 14 бизнес-дисциплин, выполняют проектную работу,
+посещают офисы компаний в Кремниевой долине и в Китае, а также работают
 над консалтинговым проектом совместно с компанией McKinsey.</p>
 <p>
 	<strong>Преподаватели</strong></p>
 <p>
-	На программе СКОЛКОВО MBA преподают профессора из ведущих бизнес-школ 
-мира: INSEAD, University of Cambridge, IMD и других. Все преподаватели 
-не просто теоретики, но и практики — предприниматели и топ-менеджеры 
+	На программе СКОЛКОВО MBA преподают профессора из ведущих бизнес-школ
+мира: INSEAD, University of Cambridge, IMD и других. Все преподаватели
+не просто теоретики, но и практики — предприниматели и топ-менеджеры
 международных компаний. &nbsp;</p>
 <p>
 	<strong>Менторские мастерские</strong></p>
 <p>
-	У каждого студента есть наставник из числа ведущих предпринимателей 
-страны, например, Михаил Куснирович, Рубен Варданян или Андрей 
+	У каждого студента есть наставник из числа ведущих предпринимателей
+страны, например, Михаил Куснирович, Рубен Варданян или Андрей
 Раппопорт. Ментор поможет с развитием существующих проектов или запуском
- нового бизнеса. Каждый студент выбирает себе ментора, с которыми он 
+ нового бизнеса. Каждый студент выбирает себе ментора, с которыми он
 будет работать на протяжении года.</p>
 <p>
 	<strong>Международные модули</strong></p>
 <p>
-	В рамках программы СКОЛКОВО MBA студенты проходят два международных 
-модуля – в США и Китае. Это поможет лучше разобраться в особенностях 
-двух крупнейших экономик мира и понять, как работать в глобальном 
+	В рамках программы СКОЛКОВО MBA студенты проходят два международных
+модуля – в США и Китае. Это поможет лучше разобраться в особенностях
+двух крупнейших экономик мира и понять, как работать в глобальном
 контексте.</p>
 <p>
 	<strong>Интеграционный модуль на Камчатке</strong></p>
 <p>
-	Для переосмысления полученных опыта и знаний в конце учебы студенты 
-СКОЛКОВО MBA отправляются на Камчатку. Шесть дней на краю света 
-посвящены изучению и преодолению себя под руководством Андрея Волкова – 
+	Для переосмысления полученных опыта и знаний в конце учебы студенты
+СКОЛКОВО MBA отправляются на Камчатку. Шесть дней на краю света
+посвящены изучению и преодолению себя под руководством Андрея Волкова –
 профессора по менеджменту и первого ректора бизнес-школы СКОЛКОВО.</p>
 <p>
 	<strong>Консалтинговый проект</strong></p>
 <p>
-	Одним из заключительных этапов программы станет консалтинговый проект, 
-разработанный совместно с компанией McKinsey. Студенты в группах 
-работают над реальными задачами крупных компаний и помогают найти 
+	Одним из заключительных этапов программы станет консалтинговый проект,
+разработанный совместно с компанией McKinsey. Студенты в группах
+работают над реальными задачами крупных компаний и помогают найти
 рабочие решения.</p>
 <p style="text-align: center;">
 	<iframe marginheight="0" marginwidth="0" scrolling="no" src="landing_2_files/viewform_002.html" style="max-width: 100%;" width="700" height="1100" frameborder="0">Загрузка...</iframe></p>
@@ -604,37 +558,37 @@ Practicum Global Shift. Она помогает понять, как сдела�
 	<strong>Будущее – за дистанционным обучением?</strong></h2>
 <p>
 	<span style="font-size:18px;"><strong><span style="color:#696969;">Сфера
- образования – одна из первых, куда пришли дистанционные технологии. 
-Зачем ехать за тридевять земель, тратить деньги на дорогу и жилье, если 
+ образования – одна из первых, куда пришли дистанционные технологии.
+Зачем ехать за тридевять земель, тратить деньги на дорогу и жилье, если
 знания и диплом столичного вуза можно получить дома?</span></strong></span></p>
 <p>
 	<strong><a href="http://ekb.dk.ru/wiki/lavrov-aleksey-anatolievich" target="_blank">Лавров Алексей Анатольевич</a>, директор регионального представительства университета «<a href="http://ekb.dk.ru/wiki/sinergiya" target="_blank">Синергия</a>»:</strong></p>
 <p>
 	<img alt="" src="landing_2_files/050_content.jpg" style="width: 300px; height: 225px; margin: 5px; float: left;">За
- полтора-два десятилетия в образовании произошла настоящая революция. 
-Повсеместное проникновение интернета и готовность вузов использовать 
-этот инструмент дали всем, кто хочет получать новые знания, возможность 
-делать это в любое время и в любом месте. Московский 
-финансово-промышленный университет «Синергия» стал одним из пионеров в 
+ полтора-два десятилетия в образовании произошла настоящая революция.
+Повсеместное проникновение интернета и готовность вузов использовать
+этот инструмент дали всем, кто хочет получать новые знания, возможность
+делать это в любое время и в любом месте. Московский
+финансово-промышленный университет «Синергия» стал одним из пионеров в
 развитии программ дистанционного обучения в России.</p>
 <p>
-	У университета «Синергия» есть платформа Synergyonline, позволяющая 
-получать образование из любой точки мира. Студенты могут слушать лекции 
-профессоров в формате вебинаров, получать онлайн-консультации, 
-взаимодействовать с куратором или преподавателем в режиме реального 
-времени. В открытом доступе слушателей – записи мастер-классов ведущих 
-предпринимателей России. Университет располагает обширной 
-онлайн-библиотекой, которая регулярно пополняется актуальной научной 
+	У университета «Синергия» есть платформа Synergyonline, позволяющая
+получать образование из любой точки мира. Студенты могут слушать лекции
+профессоров в формате вебинаров, получать онлайн-консультации,
+взаимодействовать с куратором или преподавателем в режиме реального
+времени. В открытом доступе слушателей – записи мастер-классов ведущих
+предпринимателей России. Университет располагает обширной
+онлайн-библиотекой, которая регулярно пополняется актуальной научной
 литературой.</p>
 <p>
-	Сегодня вуз предлагает абитуриентам более 60 образовательных программ 
-по трехступенчатой системе: среднее профессиональное образование (СПО), 
+	Сегодня вуз предлагает абитуриентам более 60 образовательных программ
+по трехступенчатой системе: среднее профессиональное образование (СПО),
 бакалавриат, магистратура.</p>
 <p>
 	<img alt="" src="landing_2_files/024_content.png" style="width: 463px; height: 20px;"></p>
 <p>
-	<strong>Бакалавриат можно получить, как по классическим программам 
-обучения, таким как экономика и менеджмент, так и совершенно новым 
+	<strong>Бакалавриат можно получить, как по классическим программам
+обучения, таким как экономика и менеджмент, так и совершенно новым
 направлениям:</strong></p>
 <ul>
 	<li>
@@ -647,53 +601,53 @@ Practicum Global Shift. Она помогает понять, как сдела�
 		<span style="font-size:16px;"><strong>менеджмент в гостиничном и ресторанном бизнесе.</strong></span></li>
 </ul>
 <p>
-	<strong>В отличие от классических вузов, где обучение стартует в раз в 
-год, поступление в университет «Синергия» можно не откладывать – 
+	<strong>В отличие от классических вузов, где обучение стартует в раз в
+год, поступление в университет «Синергия» можно не откладывать –
 зачисление на студентов производится ежемесячно.</strong></p>
 <p>
 	<strong><img alt="" src="landing_2_files/025_content.png" style="width: 463px; height: 20px;"></strong></p>
 <p>
-	Закончив бакалавриат, студенты могут продолжить обучение в 
-магистратуре. В университете есть аспирантура по направлениям 
+	Закончив бакалавриат, студенты могут продолжить обучение в
+магистратуре. В университете есть аспирантура по направлениям
 «Экономика» и «Юриспруденция».</p>
 <p>
 	<span style="font-size:18px;"><strong>С полным списком образовательных программ можно познакомиться на сайте <a href="https://ekt.synergy.ru/" target="_blank">https://ekt.synergy.ru/</a></strong></span></p>
 <p>
-	Стать слушателем университета «Синергия» можно в любом возрасте. В 
-фокусе особого внимания вуза – дополнительное образование. Чтобы 
-оставаться успешным, необходимо регулярно повышать квалификацию, 
+	Стать слушателем университета «Синергия» можно в любом возрасте. В
+фокусе особого внимания вуза – дополнительное образование. Чтобы
+оставаться успешным, необходимо регулярно повышать квалификацию,
 «расширять горизонты». Для решения этой задачи на базе «Синергии» создан
- «Центр дополнительного образования», где преподают опытные практики, 
+ «Центр дополнительного образования», где преподают опытные практики,
 авторитетные эксперты.</p>
 <p>
 	<img alt="" src="landing_2_files/026_content.png" style="width: 463px; height: 20px;"></p>
 <p>
-	<strong>В его арсенале более 30 курсов продолжительностью от 16 до 756 
-часов по самым востребованным направлениям: от менеджмента и экономики 
+	<strong>В его арсенале более 30 курсов продолжительностью от 16 до 756
+часов по самым востребованным направлениям: от менеджмента и экономики
 до госзакупок и социальной работы.&nbsp;</strong></p>
 <p>
 	<strong><img alt="" src="landing_2_files/027_content.png" style="width: 463px; height: 20px;"></strong></p>
 <p>
-	Экономисты могут повысить квалификацию в области оценки стоимости 
-предприятия, бухгалтерского учета и налогообложения. Юристы – 
-актуализировать знания по специальности и погрузиться в область 
-правового регулирования адвокатской деятельности. В рамках направлений 
-«Менеджмент» и «Маркетинг» есть общие программы по предпринимательству, 
-управлению персоналом, проектами, продажами и специализированные – по 
-государственному и муниципальному управлению и менеджменту в 
+	Экономисты могут повысить квалификацию в области оценки стоимости
+предприятия, бухгалтерского учета и налогообложения. Юристы –
+актуализировать знания по специальности и погрузиться в область
+правового регулирования адвокатской деятельности. В рамках направлений
+«Менеджмент» и «Маркетинг» есть общие программы по предпринимательству,
+управлению персоналом, проектами, продажами и специализированные – по
+государственному и муниципальному управлению и менеджменту в
 здравоохранении. &nbsp;</p>
 <p>
-	Преподавательский состав университета – 50 докторов наук и 250 
-кандидатов наук. Все программы «Синергии» разработаны по авторским 
-методикам и соответствуют требованиям федеральных образовательных 
-стандартов. После успешного прохождения итоговой аттестации слушатели 
-получают удостоверение о повышении квалификации или диплом о 
+	Преподавательский состав университета – 50 докторов наук и 250
+кандидатов наук. Все программы «Синергии» разработаны по авторским
+методикам и соответствуют требованиям федеральных образовательных
+стандартов. После успешного прохождения итоговой аттестации слушатели
+получают удостоверение о повышении квалификации или диплом о
 профессиональной переподготовке установленного образца.</p>
 <p>
-	Региональная сеть университета «Синергии» включает 130 филиалов и 
-представительств в России, СНГ и за рубежом. Представительство в 
-Екатеринбурге было открыто в 2001 г. Его сотрудники помогают 
-абитуриентам и студентам университета на всех этапах – консультируют, 
+	Региональная сеть университета «Синергии» включает 130 филиалов и
+представительств в России, СНГ и за рубежом. Представительство в
+Екатеринбурге было открыто в 2001 г. Его сотрудники помогают
+абитуриентам и студентам университета на всех этапах – консультируют,
 информируют, отвечают на вопросы.</p>
 <p>
 	<a href="https://ekt.synergy.ru/" target="_blank"><img alt="" src="landing_2_files/039_content.jpg" style="width: 500px; height: 100px;"></a></p>
@@ -739,53 +693,7 @@ Practicum Global Shift. Она помогает понять, как сдела�
       </div>
   </div>
 </footer>
-
-    <noindex style="display: none;">
-      <!--LiveInternet counter--><script type="text/javascript"><!--
-timerCounter=setTimeout(function() {
-  var counter=document.getElementById('li-counter');
-  if(!counter.complete){counter.src='';}
-}, 1000);
-document.write("<a href='http://www.liveinternet.ru/click;Dkvartal-group' "+
-"target=_blank><img id=\"li-counter\" onload=\"clearTimeout(timerCounter)\" " +
-"src='//counter.yadro.ru/hit;Dkvartal-group?t44.2;r"+
-escape(document.referrer)+((typeof(screen)=="undefined")?"":
-";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-";h"+escape(document.title.substring(0,150))+";"+Math.random()+
-"' alt='' title='LiveInternet' "+
-"border='0' width='31' height='31'><\/a>")
-//--></script><a href="http://www.liveinternet.ru/click;Dkvartal-group" target="_blank"><img id="li-counter" onload="clearTimeout(timerCounter)" src="landing_2_files/hit.gif" alt="" title="LiveInternet" width="31" height="31" border="0"></a><!--/LiveInternet-->
-
-      <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-  window.addEventListener('load', function() {
-    (function(d, w, c) {
-      (w[c] = w[c] || []).push(function() {
-        try {
-          w.yaCounter1388249 = new Ya.Metrika({id: 1388249, enableAll: true, webvisor: true});
-        }
-        catch(e) {} });
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = '//mc.yandex.ru/metrika/watch.js';
-    if (w.opera == "[object Opera]") {
-      d.addEventListener("DOMContentLoaded", f);
-    } else { f(); }
-    })(document, window, 'yandex_metrika_callbacks');
-  });
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/1388249" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-    </noindex>
       <link rel="stylesheet" href="landing_2_files/arrow_up.css">
       <script type="text/javascript" src="landing_2_files/arrow_up.js"></script>
     <script type="text/javascript" src="landing_2_files/app.js"></script>
-  
-
-
-<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="landing_2_files/afATJJjxKE6.html" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div></body></html>
+</body></html>
