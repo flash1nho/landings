@@ -112,10 +112,25 @@ body:before { content: ''; display: block; position: absolute; width: 100%; heig
 .right-section .text-zone-container .social-buttons { margin: 0 0 0 20px; }
 .right-section .text-zone-container .social-buttons:last-child { margin-left: 0; }
 
+.gallery {
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 997px) {
   .main { width: 100%; }
   .main-photo { text-align: center; }
   .header .header-title.top { top: auto; bottom: 0; width: 100%; text-align: center; left: 0; transform: none; }
+}
+
+@media screen and (max-width: 800px) {
+  .gallery {
+    margin-right: 20px;
+  }
+
+  .text-zone.text-zone-full .gallery {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 750px) {

@@ -126,6 +126,11 @@ body:before { content: ''; display: block; position: absolute; width: 100%; heig
   .gallery {
     margin-right: 20px;
   }
+
+  .text-zone.text-zone-full .gallery {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 750px) {

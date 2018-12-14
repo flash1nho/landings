@@ -187,6 +187,11 @@
     margin-left: 20px;
   }
 
+  .figure__desc {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
   .gallery .slick-arrow {
     width: 14px;
     background-color: transparent;
