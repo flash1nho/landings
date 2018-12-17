@@ -128,8 +128,16 @@ body:before { content: ''; display: block; position: absolute; width: 100%; heig
   }
 
   .text-zone.text-zone-full .gallery {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  .text-zone.text-zone-full .gallery .slick-prev {
+    left: 3px;
+  }
+
+  .text-zone.text-zone-full .gallery .slick-next {
+    right: 3px;
   }
 }
 
