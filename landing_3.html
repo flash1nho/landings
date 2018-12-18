@@ -665,9 +665,9 @@ p.dline {
 
   </div>
   <div class="text-zone text-zone-full">
-    <div class="gallery">
+    <div class="gallery js-gallery-parent">
       <div class="gallery__slider js-gallery">
-        <div class="gallery__item">
+        <div class="gallery__item js-gallery-item" data-title="Заголовок картинки" data-text="Описание картинки">
           <figure class="figure">
             <div class="figure__thumbnail js-gallery-thumbnail">
               <img
@@ -675,16 +675,10 @@ p.dline {
                 src="https://avatars.mds.yandex.net/get-pdb/38069/f08bf796-cc63-4ae9-98c2-9d4bd39ea00f/s1200"
               >
             </div>
-            <figcaption class="figure__desc">
-              <h5 class="figure__title">Заголовок картинки</h5>
-              <p class="figure__text">
-                Описание картинки
-              </p>
-            </figcaption>
           </figure>
         </div>
 
-        <div class="gallery__item">
+        <div class="gallery__item js-gallery-item" data-title="Заголовок картинки2" data-text="Описание картинки2">
           <figure class="figure">
             <div class="figure__thumbnail js-gallery-thumbnail">
               <img
@@ -692,12 +686,6 @@ p.dline {
                 src="https://avatars.mds.yandex.net/get-pdb/34158/57915d53-2fcf-4837-8a2a-a9f00da0a1ea/s1200"
               >
             </div>
-            <figcaption class="figure__desc">
-              <h5 class="figure__title">Заголовок картинки</h5>
-              <p class="figure__text">
-                Описание картинки
-              </p>
-            </figcaption>
           </figure>
         </div>
       </div>
@@ -777,6 +765,13 @@ p.dline {
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="figure-desc js-gallery-desc">
+      <h5 class="figure-desc__title js-figure-title">Заголовок картинки</h5>
+      <p class="figure-desc__text js-figure-text">
+        Описание картинки
+      </p>
     </div>
   </div>
 

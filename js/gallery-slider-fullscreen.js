@@ -2,10 +2,6 @@
   var thumbClass = '.js-gallery-thumbnail';
 
   $('.js-gallery')
-    .on('init', function(event, slick) {
-      var thumbHeight = slick.$slides[0].querySelector(thumbClass).offsetHeight;
-      if (thumbHeight) setNavContainerHeight($(this), thumbHeight);
-    })
     .slick({
       lazyLoad: "ondemand",
       initialSlide: 0,
@@ -29,19 +25,14 @@
         }
       ]
     })
-    .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-      var nextThumbHeight = slick.$slides[nextSlide].querySelector(thumbClass).offsetHeight;
-      setNavContainerHeight($(this), nextThumbHeight);
-    })
     .on('afterChange', function(event, slick, currentSlide) {
-      // handler for change social share links
-      // call slick.$slides[currentSlide] to get the currentSlide 
+      var $currentSlideEl = $(slick.$slides[currentSlide]);
+      var $figureTitle = $currentSlideEl.closest('.js-gallery-parent').siblings('.js-gallery-desc').find('.js-figure-title');
+      var $figureText = $currentSlideEl.closest('.js-gallery-parent').siblings('.js-gallery-desc').find('.js-figure-text');
+      var $galleryItem = $currentSlideEl.find('.js-gallery-item');
+
+      $figureTitle.html($galleryItem.data('title'))
+      $figureText.html($galleryItem.data('text'))
     });
-
-  function setNavContainerHeight(self, height) {
-    var $navContainer = self.parent().find('.js-gallery-navigation');
-
-    $navContainer.height(height);
-  }
 
 })();
