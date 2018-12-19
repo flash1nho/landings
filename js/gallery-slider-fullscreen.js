@@ -27,8 +27,8 @@
     })
     .on('afterChange', function(event, slick, currentSlide) {
       var $currentSlideEl = $(slick.$slides[currentSlide]);
-      var $figureTitle = $currentSlideEl.closest('.js-gallery-parent').siblings('.js-gallery-desc').find('.js-figure-title');
-      var $figureText = $currentSlideEl.closest('.js-gallery-parent').siblings('.js-gallery-desc').find('.js-figure-text');
+      var $figureTitle = $currentSlideEl.closest('.js-gallery-parent').find('.js-figure-title');
+      var $figureText = $currentSlideEl.closest('.js-gallery-parent').find('.js-figure-text');
       var $galleryItem = $currentSlideEl.find('.js-gallery-item');
 
       $figureTitle.html($galleryItem.data('title'))

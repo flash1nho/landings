@@ -3,6 +3,10 @@
   margin-top: 10px;
 }
 
+.gallery__in {
+  position: relative;
+}
+
 .gallery__navigation {
   position: absolute;
   top: 0;
