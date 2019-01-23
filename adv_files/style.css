@@ -255,13 +255,8 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-left: -10px;
   padding: 0;
   list-style: none;
-}
-
-.feature__item {
-  margin-left: 10px;
 }
 
 .feature_special {
