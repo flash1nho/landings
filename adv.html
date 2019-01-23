@@ -74,13 +74,13 @@
               </li>
 
               <li class="menu__item">
-                <a class="menu__link i i_content_bold" href="#order">
+                <a class="menu__link i i_content_bold js-scroll-to" href="#order">
                   <span class="i__text">Заказать рекламу</span>
                 </a>
               </li>
 
               <li class="menu__item">
-                <a class="menu__link" href="#contact">
+                <a class="menu__link js-scroll-to" href="#contact">
                   Контакты
                 </a>
               </li>
@@ -357,5 +357,19 @@
 
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.js-scroll-to').click(function (e) {
+        e.preventDefault()
+        var selector = $(this).attr('href')
+
+        $('html, body').animate({
+            scrollTop: $(selector).offset().top
+        }, 2000)
+      })
+    })
+  </script>
 </body>
 </html>
