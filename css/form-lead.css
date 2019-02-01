@@ -170,6 +170,10 @@
   width: 145px;
 }
 
+.form-lead_viewtype_wide .title-success {
+  font-size: 16px;
+}
+
 @media (max-width: 900px) {
   .form-lead_viewtype_wide form {
     flex-direction: column;
