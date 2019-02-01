@@ -174,6 +174,11 @@
   font-size: 16px;
 }
 
+.form-lead_viewtype_wide .form-lead-foot {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media (max-width: 900px) {
   .form-lead_viewtype_wide form {
     flex-direction: column;
