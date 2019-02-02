@@ -114,6 +114,10 @@
   margin-left: auto;
 }
 
+.form-lead_viewtype_wide .fields:nth-child(2) + .fields_submit {
+  margin-left: 0;
+}
+
 .form-lead_viewtype_wide form {
   display: flex;
   flex-wrap: wrap;
