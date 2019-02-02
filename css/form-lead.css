@@ -124,6 +124,21 @@
   justify-content: space-between;
 }
 
+.form-lead_viewtype_center form {
+  justify-content: center;
+}
+
+
+.form-lead_viewtype_center .fields:nth-child(3n) + .fields_submit {
+  margin-left: 0;
+}
+
+.form-lead_viewtype_center .fields_submit {
+  justify-content: center;
+  padding-left: 0;
+}
+
+
 .form-lead_viewtype_wide form .field_with_errors {
   margin-right: 0;
   margin-left: 0;
@@ -170,7 +185,8 @@
   border-radius: 0;
 }
 
-.form-lead_viewtype_one form .submit {
+.form-lead_viewtype_one form .submit,
+.form-lead_viewtype_center form .submit {
   width: 145px;
 }
 
