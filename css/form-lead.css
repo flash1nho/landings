@@ -1,0 +1,242 @@
+.form-lead {
+  max-width: 628.5px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 2px -2px gray
+}
+
+.form-lead .title {
+  padding: 10px 10px 0;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form-lead .fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-lead form input {
+  flex-basis: 280px;
+  width: 100%;
+  height: 32px;
+  margin: 10px 10px 0;
+  padding: 2px 5px;
+  font-size: 12px;
+  background: #fff;
+  border: #b3b3b3 solid 1px;
+  box-sizing: border-box;
+}
+
+.form-lead form .field_with_errors {
+  flex-basis: 280px;
+  margin: 10px 10px 0;
+}
+
+.form-lead form .field_with_errors input {
+  margin: 0;
+}
+
+.form-lead form .form-error {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #cf2c31
+}
+
+.form-lead form .submit {
+  height: 32px;
+  box-shadow: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+}
+
+.form-lead .subtitle {
+  padding: 10px;
+}
+
+.form-lead .form-lead-foot {
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: normal;
+  text-align: center;
+  color: #959595
+}
+
+.form-lead .form-lead-foot a {
+  color: #959595
+}
+
+.form-lead .error-center {
+  position: relative;
+  left: 149px
+}
+
+.form-lead .img-logo {
+  padding-bottom: 10px
+}
+
+.form-lead .title-success {
+  padding: 10px;
+  text-align: center
+}
+
+.form-lead .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.form-lead_viewtype_wide {
+  max-width: none;
+  box-shadow: none;
+}
+
+.form-lead_viewtype_wide .fields {
+  flex-basis: 29%;
+  min-width: 199px;
+  max-width: 260px;
+}
+
+.form-lead_viewtype_wide .fields_submit {
+  justify-content: flex-end;
+  padding-left: 38px;
+  box-sizing: border-box;
+}
+
+.form-lead_viewtype_wide .fields:nth-child(3n) + .fields_submit {
+  margin-left: auto;
+}
+
+.form-lead_viewtype_wide .fields:nth-child(2) + .fields_submit {
+  margin-left: 0;
+}
+
+.form-lead_viewtype_wide form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-lead_viewtype_center form {
+  justify-content: center;
+}
+
+
+.form-lead_viewtype_center .fields:nth-child(3n) + .fields_submit {
+  margin-left: 0;
+}
+
+.form-lead_viewtype_center .fields_submit {
+  justify-content: center;
+  padding-left: 0;
+}
+
+
+.form-lead_viewtype_wide form .field_with_errors {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.form-lead_viewtype_one form {
+  max-width: 415px;
+  margin: 0 auto;
+}
+
+.form-lead_viewtype_one .fields {
+  flex-basis: 200px;
+}
+
+.form-lead_viewtype_wide form input {
+  flex-basis: auto;
+  height: 37px;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.form-lead_viewtype_wide form input::placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.form-lead_viewtype_one .fields_submit {
+  margin-left: 0;
+}
+
+.form-lead_viewtype_wide form .submit {
+  width: 212px;
+  height: 37px;
+  padding: 0;
+  line-height: 37px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #cd1013;
+  border-radius: 0;
+}
+
+.form-lead_viewtype_one form .submit,
+.form-lead_viewtype_center form .submit {
+  width: 145px;
+}
+
+.form-lead_viewtype_wide .title-success {
+  font-size: 16px;
+}
+
+.form-lead_viewtype_wide .form-lead-foot {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .form-lead_viewtype_wide form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .form-lead_viewtype_wide .fields {
+    flex-basis: auto;
+    max-width: 260px;
+    width: 100%;
+  }
+
+  .form-lead_viewtype_wide form input {
+    flex-basis: 202px;
+    margin-top: 60px;
+  }
+
+  .form-lead_viewtype_wide form .fields:first-child input {
+    margin-top: 10px;
+  }
+
+  .form-lead_viewtype_wide .fields_submit {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .form-lead_viewtype_wide .fields:nth-child(3n) + .fields_submit {
+    margin-left: 0;
+  }
+
+  .form-lead_viewtype_wide form .submit {
+    flex-basis: 164px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-lead form input {
+    font-size: 16px;
+  }
+}

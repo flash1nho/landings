@@ -1,0 +1,54 @@
+.partner-info {
+  max-width: 760px;
+  margin: 0 auto 20px;
+  box-sizing: border-box;
+}
+
+.partner-info__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.partner-info__desc {
+  display: flex;
+}
+
+.partner-info__thumbnail {
+  max-width: 130px;
+  margin-right: 35px;
+  flex-shrink: 0;
+}
+
+.partner-info__image {
+  max-width: 100%;
+}
+
+.partner-info__text {
+  font-size: 16px;
+}
+
+.form-wrapper {
+  max-width: 976px;
+  margin: 0 auto;
+}
+
+.form-lead_viewtype_wide form .submit {
+  margin-top: 58px;
+}
+
+@media (max-width: 800px) {
+  .partner-info {
+    padding: 0 25px;
+  }
+
+  .partner-info__title {
+    margin-bottom: 25px;
+  }
+
+  .partner-info__thumbnail {
+    max-width: 80px;
+    margin-right: 15px;
+  }
+}
