@@ -38,6 +38,11 @@
   margin-top: 58px;
 }
 
+.nominees {
+  margin-bottom: 0;
+  padding-bottom: 64px;
+}
+
 @media (max-width: 800px) {
   .partner-info {
     padding: 0 25px;
