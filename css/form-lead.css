@@ -129,7 +129,7 @@
 }
 
 
-.right-section .form-lead_viewtype_wider .fields:nth-child(3n) + .fields_submit {
+.right-section .form-lead_viewtype_wide .fields:nth-child(3n) + .fields_submit {
   margin-left: 0;
 }
 
@@ -188,7 +188,7 @@
 }
 
 .form-lead_viewtype_one form .submit,
-.right-section .form-lead_viewtype_wider form .submit {
+.right-section .form-lead_viewtype_wide form .submit {
   width: 145px;
 }
 
