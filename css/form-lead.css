@@ -70,7 +70,8 @@
 }
 
 .form-lead .form-lead-foot a {
-  color: #959595
+  color: #959595;
+  text-decoration: underline;
 }
 
 .form-lead .error-center {
