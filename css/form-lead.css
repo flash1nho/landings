@@ -164,6 +164,7 @@
   background: transparent;
   border: none;
   border-bottom: 2px solid #dcdcdc;
+  text-overflow: ellipsis;
 }
 
 .form-lead_viewtype_wide form input::placeholder {
