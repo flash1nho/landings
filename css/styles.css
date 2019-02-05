@@ -35,8 +35,8 @@
 }
 
 .nominees {
-  margin-bottom: 0;
-  padding-bottom: 64px;
+  margin-bottom: 0!important;
+  padding-bottom: 64px!important;
 }
 
 @media (max-width: 800px) {
