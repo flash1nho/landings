@@ -70,8 +70,7 @@
 }
 
 .form-lead .form-lead-foot a {
-  color: #959595;
-  text-decoration: underline;
+  color: #959595
 }
 
 .form-lead .error-center {
@@ -119,24 +118,25 @@
   margin-left: 0;
 }
 
-.form-lead_viewtype_wide form {
+.form-lead_viewtype_wide .lead-form__body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.form-lead_viewtype_center form {
+.right-section .form-lead_viewtype_wide .lead-form__body {
   justify-content: center;
 }
 
 
-.form-lead_viewtype_center .fields:nth-child(3n) + .fields_submit {
+.right-section .form-lead_viewtype_wide .fields:nth-child(3n) + .fields_submit {
   margin-left: 0;
 }
 
-.form-lead_viewtype_center .fields_submit {
+.right-section .form-lead_viewtype_wide .fields_submit {
   justify-content: center;
   padding-left: 0;
+  margin-left: 0!important;
 }
 
 
@@ -161,9 +161,10 @@
   margin-left: 0;
   margin-right: 0;
   font-size: 14px;
-  background: transparent;
+  background: #fff;
   border: none;
   border-bottom: 2px solid #dcdcdc;
+  text-overflow: ellipsis;
 }
 
 .form-lead_viewtype_wide form input::placeholder {
@@ -187,7 +188,7 @@
 }
 
 .form-lead_viewtype_one form .submit,
-.form-lead_viewtype_center form .submit {
+.right-section .form-lead_viewtype_wide form .submit {
   width: 145px;
 }
 
@@ -201,7 +202,7 @@
 }
 
 @media (max-width: 900px) {
-  .form-lead_viewtype_wide form {
+  .form-lead_viewtype_wide .lead-form__body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -233,6 +234,10 @@
 
   .form-lead_viewtype_wide form .submit {
     flex-basis: 164px;
+  }
+
+  .form-lead_viewtype_wide form .field_with_errors {
+    flex-basis: 202px;
   }
 }
 
